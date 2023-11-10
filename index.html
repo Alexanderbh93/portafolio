@@ -7,6 +7,7 @@
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="stylesheet" href="assets/style.css">
+          <link rel="stylesheet" href="assets/functions.js">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" rel="stylesheet"/>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
     <link rel="icon" href="assets/codelex-mini.ico">
@@ -20,19 +21,28 @@
         <a href="#" class="logo">CodeLex</a>
         <input type="checkbox" id="menu">
         <label for="menu">
-          <img src="assets/menu.png" class="menu-icono" alt="">
+        <img src="assets/menu.png" class="menu-icono" onclick="mostrar()">
         </label>
     <nav class="navbar">
-      <ul>
+      <ul id="sidemenu">
+        
         <li><a href="#about">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#proyects">Projects</a></li>
         <li><a href="#contact">Contact me</a></li>
+        <i class="ri-skip-up-line" onclick="ocultar()"></i>
       </ul>
-  
     </nav>
       </div>
-    
+      <script>
+        function mostrar() {
+          document.getElementById("sidemenu").style.display='block';
+        }
+        function ocultar() {
+          document.getElementById("sidemenu").style.display='none';
+        }
+      </script>
+     
     </div>
   </header>
   <section class="hero">
@@ -219,3 +229,4 @@
 </main>
 </body>
 </html>
+
