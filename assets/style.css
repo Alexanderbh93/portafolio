@@ -134,30 +134,22 @@ cursor: pointer;
 }
 
 .hero h1{
-display: block;
-font-family: monospace;
-white-space: nowrap;
-font-size: 5em;
 margin: auto;
+font-family: monospace;
+font-size: 5em;
+margin-top: 0;
+margin-bottom: 0.5em;
 border-right: 4px solid;
-width: 18ch;
+width: 9ch;
 
 
-animation: typing 2s steps(18), blink .5s infinite step-end alternate
+animation: typing 1.2s steps(9), blink 0.5s infinite step-end alternate
 }
-.hero h2{
-  font-family: monospace;
 
-
-  animation: 
-}
 
 @keyframes typing {
-  from { clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%)}
+  from { width: 0}
 }
- to {clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)}
-  
- 
 
 @keyframes blink {
   50% {border-color: transparent;}
@@ -469,12 +461,10 @@ form btn2{
 /*============================Responsive Design=================*/
 
 @media screen and (max-width: 600px) {
-  .hero h1{
-    margin left: 60px;
-    
-    }
-    .hero h2{
-     
+  .hero h2{
+    display: none;
+
+  }
   
   .row{
     display: block;
