@@ -188,7 +188,7 @@ main {
 .imagen-me {
   width: 80%;
   border-radius: 15px;
-  transition: 0.7s;
+  transition: 0.5s;
   margin: auto;
 
 }
@@ -198,7 +198,7 @@ main {
 }
 
 #about {
-  max-width: 2080px;
+  max-width: 2040px;
   margin: auto;
   background-size: cover;
   background-attachment: fixed;
@@ -217,6 +217,7 @@ main {
 }
 
 .about-col-2 {
+  margin-top: 120px;
   flex-basis: 60%;
 }
 .sub-title{
@@ -476,6 +477,10 @@ form btn2{
     margin-left: 15px;
     margin-bottom: 20px;
   }
+  .about-col-2 {
+    margin-top: 10px;
+    flex-basis: 60%;
+  }
   .contact-left, .contact-right{
     flex-basis: 100%;
   }
@@ -486,8 +491,9 @@ form btn2{
   }
 
   .contact-left{
-    margin-left: 60px;
-    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+    
   }
 
   .contact-right .btn2{
