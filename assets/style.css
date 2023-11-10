@@ -378,10 +378,9 @@ margin-bottom: 1rem;
 #contact{
   background-color: rgb(23, 23, 46);
   color: white;
-  padding: 60px;
+  padding: 50px;
 }
 .contact-left{
-  margin-top: 20px;
   flex-basis: 35%;
 }
 
